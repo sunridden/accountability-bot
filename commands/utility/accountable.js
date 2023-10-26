@@ -26,7 +26,7 @@ module.exports = {
         }
 
         if (!textInput || !scheduledTime) {
-            await interaction.reply('Please enter the required text prompts in their proper formats (e.g, habit: workout time: 5:00 PM)');
+            await interaction.reply('Please enter the required text prompts in their proper formats "hh:mm AM/PM" for time (e.g, habit: workout time: 5:00 PM)');
         } else {
             await interaction.reply(`Scheduled a daily reminder of the following: ${textInput} at ${timeOption}`);
         }
